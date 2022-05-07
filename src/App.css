@@ -1,38 +1,2101 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  box-sizing: border-box;
+  background: rgb(245, 245, 245);
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+:root{
+  scroll-behavior: smooth;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+}
+
+.menu{
+  width: 100%;
+  height: 100vh;
+}
+
+/* navbar start */
+
+.navBox{
+  position: fixed;
+  width: 100%;
+  backdrop-filter: blur(10px);
+}
+
+nav{
+  margin-left: 790px;
+}
+
+ul{
+  display: flex;
+}
+
+li{
+  margin: 0 15px;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.arrow{
+  display: none;
+}
+
+/* navbar end */
+
+.heroTxt{
+  z-index: -10;
   text-align: center;
+  padding: 650px 0;
+  font-size: 1.5rem;
+  color: #707070;
+  letter-spacing: 1px;
+  font-weight: 600;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logoBox{
+  position: static;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* background: #000; */
+  margin: 10px 130px;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo{
+  width: 60px;
+  clip-path: circle(50%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logoTitle{
+  margin: 0 20px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/* bg start */
+.homebgBox{
+  position: absolute;
+  z-index: -99;
+  top: 0;
+  width: 100%;
+}
+
+.homeBg{
+  width: 100%;
+}
+/* bg end */
+
+
+/* about bg start */
+
+.about{
+  background-image: url('asset/Taieri\ 1.png');
+  background-size: cover;
+  /* background: #000; */
+}
+
+/* about bg end */
+
+.aboutTitle{
+  position: absolute;
+  z-index: -90;
+  top: 120%;
+  left: 10%;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.textBox{
+  position: relative;
+  z-index: -90;
+  top: 210px;
+  left: 200px;
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 390px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  background: #fff;
+}
+
+.data{
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* background: #000; */
+  width: 25px;
+  height: 300px;
+  position: relative;
+  z-index: -90;
+  top: 170px;
+  left: 1100px;
+}
+
+.bulat1{
+  width: 20px;
+  height: 50px;
+  background: #737373;
+  border-radius: 50px;
+}
+
+.bulat2{
+  position: relative;
+  top: 80px;
+  width: 20px;
+  height: 50px;
+  background: #737373;
+  border-radius: 50px;
+}
+
+.bulat3{
+  position: relative;
+  top: 160px;
+  width: 20px;
+  height: 50px;
+  background: #737373;
+  border-radius: 50px;
+}
+
+.rectangel{
+  top: -42px;
+  position: relative;
+  width: 10px;
+  height: 600px;
+  background: #737373;
+}
+
+.bulat1Txt{
+  font-size: 17px;
+  position: absolute;
+  left: 75%;
+  top: 138%;
+}
+
+.bulat2Txt{
+  font-size: 17px;
+  position: absolute;
+  left: 60%;
+  top: 150%;
+  text-align: right;
+}
+
+.bulat3Txt{
+  font-size: 17px;
+  position: absolute;
+  left: 75%;
+  top: 163%;
+  text-align: left;
+}
+
+.ownerBox{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 180px;
+  width: 37%;
+  height: 33vh;
+  /* background: #000; */
+}
+
+.owner{
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}
+
+.owner1 , .owner2{
+  margin: 70px 90px;
+}
+
+.owner1Box , .owner2Box , .owner3Box{
+  font-weight: bold;
+  text-align: center;
+}
+
+.owner1Box p , .owner3Box p{
+  margin-top: -60px;
+}
+
+.products{
+  background-image: url('./asset/360_F_218124977_YT1nJhkUSOEAh9kaUiW2ql7SSRxbLUwj-removebg-preview\ 1.png');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.productsBox{
+  position: relative;
+  z-index: -99;
+  top: 15%;
+}
+
+.box{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 10px;
+  backdrop-filter: blur(10px);
+  background: rgb(223, 223, 223);
+  border: 1px solid #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.box1{
+  margin: 8% auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.box2{
+  margin: -5% 10%;
+}
+
+.box3{
+  margin: -20% 75%;
+}
+
+.camera{
+  position: relative;
+  z-index: -99;
+  width: 150px;
+  top: 10%;
+  left: 2%;
+}
+
+.galeryBox{
+  margin: 5% 20%;
+  width: 70%;
+  height: 70vh;
+}
+
+.imgGalery{
+  margin: 10px;
+}
+
+/* img galery start */
+
+.img2{
+  margin-left: 30px;
+}
+
+.img3{
+  margin-left: 70px;
+}
+
+.img4{
+  width: 29%;
+}
+
+.img56{
+  display: flex;
+  flex-direction: column;
+  margin-left: 33%;
+  margin-top: -24%;
+}
+
+.img5{
+  width: 24.5%;
+}
+
+.img6{
+  width: 40%;
+}
+
+.img78{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  margin-right: 14%;
+  margin-top: -23%;
+}
+
+.img8{
+  width: 27%;
+}
+
+.img7{
+  width: 25%;
+}
+
+/* img galery end */
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 35vh;
+  background-image: url('./asset/Hinterrhein\ 1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.findusBox{
+  margin: 0 50px;
+}
+
+.findusTxt , .contactTxt , .companyTxt{
+  margin: 0 20px;
+}
+
+.findusLine , .contactLine , .companyLine{
+  width: 300px;
+}
+
+.findusWord , .companyBrand{
+  margin: 10px 20px;
+}
+
+.findusIg{
+  margin: 0 20px;
+  font-weight: bold;
+}
+
+.number{
+  margin: 20px 30px;
+}
+
+.companyBox{
+  margin-left: 50px;
+}
+
+
+
+/* M061L3 6R34K P01NT */
+
+
+
+/* 1450 */
+
+@media (max-width: 1450px){
+  nav{
+    margin-left: 700px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .arrow{
+    display: none;
+  }
+
+  .bulat1Txt{
+    font-size: 16px;
+    left: 78%;
+    top: 135%;
+  }
+  
+  .bulat2Txt{
+    font-size: 16px;
+    left: 65%;
+    top: 147%;
+  }
+  
+  .bulat3Txt{
+    font-size: 16px;
+    left: 78%;
+    top: 158%;
+  }
+
+  .img4{
+    width: 30.5%;
+  }
+  
+  .img56{
+    margin-left: 35%;
+  }
+  
+  .img5{
+    width: 26%;
+  }
+  
+  .img6{
+    width: 40%;
+  }
+  
+  .img78{
+    margin-right: 10%;
+  }
+
+  .img7{
+    width: 21%;
+  }
+}
+
+/* 1350 */
+
+@media (max-width: 1350px){
+  nav{
+    margin-left: 600px;
+  }
+
+  .arrow{
+    display: none;
+  }
+
+  .data{
+    left: 950px;
+  }
+
+  .bulat1Txt{
+    font-size: 16px;
+    left: 73%;
+    top: 135%;
+  }
+  
+  .bulat2Txt{
+    font-size: 16px;
+    left: 58%;
+    top: 147%;
+  }
+  
+  .bulat3Txt{
+    font-size: 16px;
+    left: 73%;
+    top: 159%;
+  }
+
+  .img1{
+    width: 30.5%;
+  }
+
+  .img2{
+    width: 17%;
+  }
+  
+  .img3{
+    margin-left: 70px;
+    width: 28%;
+  }
+
+  .img4{
+    width: 30.5%;
+  }
+  
+  .img56{
+    margin-left: 35%;
+  }
+  
+  .img5{
+    width: 26%;
+  }
+  
+  .img6{
+    width: 40%;
+  }
+  
+  .img78{
+    margin-right: 10%;
+  }
+
+  .img7{
+    width: 21%;
+  }
+}
+
+/* 1250 */
+
+@media (max-width: 1250px){
+  nav{
+    margin-left: 500px;
+  }
+
+  .arrow{
+    display: none;
+  }
+
+  .data{
+    left: 930px;
+  }
+
+  .bulat1Txt{
+    font-size: 15px;
+    left: 77%;
+    top: 135%;
+  }
+  
+  .bulat2Txt{
+    font-size: 15px;
+    left: 62%;
+    top: 147%;
+  }
+  
+  .bulat3Txt{
+    font-size: 15px;
+    left: 77%;
+    top: 159%;
+  }
+
+  .img1{
+    width: 30.5%;
+  }
+
+  .img2{
+    width: 17%;
+  }
+  
+  .img3{
+    margin-left: 70px;
+    width: 28%;
+  }
+
+  .img4{
+    width: 30.5%;
+  }
+  
+  .img56{
+    margin-left: 35%;
+  }
+  
+  .img5{
+    width: 26%;
+  }
+  
+  .img6{
+    width: 40%;
+  }
+  
+  .img78{
+    margin-right: 9%;
+    margin-top: -24%;
+  }
+
+  .img8{
+    width: 28%;
+  }
+
+  .img7{
+    width: 21%;
+  }
+}
+
+/* 1150 */
+
+@media (max-width: 1150px){
+  nav{
+    margin-left: 400px;
+  }
+
+  .arrow{
+    display: none;
+  }
+
+  .aboutTitle{
+    font-size: 1.2rem;
+  }
+  
+  .textBox{
+    left: 150px;
+    width: 350px;
+  }
+
+  .data{
+    left: 820px;
+  }
+
+  .bulat1Txt{
+    font-size: 15px;
+    left: 74%;
+    top: 135%;
+  }
+  
+  .bulat2Txt{
+    font-size: 15px;
+    left: 58%;
+    top: 147%;
+  }
+  
+  .bulat3Txt{
+    font-size: 15px;
+    left: 74%;
+    top: 159%;
+  }
+
+  .ownerBox{
+    margin: 0 180px;
+  }
+  
+  .owner{
+    width: 100px;
+    height: 100px;
+  }
+  
+  .owner1 , .owner2{
+    margin: 70px 90px;
+  }
+  
+  .owner2Box p {
+    font-size: 15px;
+  }
+  
+  .owner1Box p , .owner3Box p{
+    margin-top: -60px;
+    font-size: 15px;
+  }
+
+  .box{
+    width: 230px;
+    height: 230px;
+  }
+  
+  .box1{
+    margin: 8% auto;
+  }
+  
+  .box2{
+    margin: -5% 5%;
+  }
+  
+  .box3{
+    margin: -20% 75%;
+  }
+  
+  .img1{
+    width: 32%;
+  }
+
+  .img2{
+    width: 18%;
+  }
+  
+  .img3{
+    margin-left: 70px;
+    width: 29%;
+  }
+
+  .img4{
+    width: 32%;
+  }
+  
+  .img56{
+    margin-left: 37%;
+    margin-top: -26%;
+  }
+  
+  .img5{
+    width: 29%;
+  }
+  
+  .img6{
+    width: 41%;
+  }
+  
+  .img78{
+    margin-right: 3.5%;
+    margin-top: -26%;
+  }
+
+  .img8{
+    width: 30%;
+  }
+
+  .img7{
+    width: 21%;
+  }
+}
+
+/* 1050 */
+
+@media (max-width: 1050px){
+  nav{
+    margin-left: 300px;
+  }
+
+  .arrow{
+    display: none;
+  }
+
+  .aboutTitle{
+    font-size: 1.2rem;
+  }
+  
+  .textBox{
+    left: 150px;
+    width: 350px;
+  }
+
+  .data{
+    left: 780px;
+  }
+
+  .bulat1Txt{
+    font-size: 14px;
+    left: 77%;
+    top: 135%;
+  }
+  
+  .bulat2Txt{
+    font-size: 14px;
+    left: 60%;
+    top: 147%;
+  }
+  
+  .bulat3Txt{
+    font-size: 14px;
+    left: 77%;
+    top: 159%;
+  }
+
+  .ownerBox{
+    margin: 0 180px;
+  }
+  
+  .owner{
+    width: 100px;
+    height: 100px;
+  }
+  
+  .owner1 , .owner2{
+    margin: 70px 90px;
+  }
+  
+  .owner2Box p {
+    font-size: 15px;
+  }
+  
+  .owner1Box p , .owner3Box p{
+    margin-top: -60px;
+    font-size: 15px;
+  }
+
+  .box{
+    width: 230px;
+    height: 230px;
+  }
+  
+  .box1{
+    margin: 8% auto;
+  }
+  
+  .box2{
+    margin: -5% 5%;
+  }
+  
+  .box3{
+    margin: -20% 75%;
+  }
+  
+  .galeryBox{
+    margin: 15% 18%;
+    width: 73%;
+    height: 70vh;
+    /* background: #000; */
+  }
+
+  .img1{
+    width: 33%;
+  }
+
+  .img2{
+    width: 18.5%;
+  }
+  
+  .img3{
+    margin-left: 70px;
+    width: 30%;
+  }
+
+  .img4{
+    width: 33%;
+  }
+  
+  .img56{
+    margin-left: 38.5%;
+    margin-top: -28%;
+  }
+  
+  .img5{
+    width: 30%;
+  }
+  
+  .img6{
+    width: 48%;
+  }
+  
+  .img78{
+    margin-right: 1%;
+    margin-top: -27.5%;
+  }
+
+  .img8{
+    width: 29%;
+  }
+
+  .img7{
+    width: 22%;
+  }
+
+  .footer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 35vh;
+    background-image: url('./asset/Hinterrhein\ 1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .findusBox{
+    margin: 0 50px;
+  }
+  
+  .findusTxt , .contactTxt , .companyTxt{
+    margin: 0 20px;
+    font-size: 18px;
+  }
+  
+  .findusLine , .contactLine , .companyLine{
+    width: 250px;
+  }
+  
+  .findusWord , .companyBrand{
+    margin: 10px 20px;
+    font-size: 14px;
+    font-size: 14px;
+  }
+
+  .findusIg{
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+  .number{
+    margin: 20px 30px;
+    font-size: 14px;
+  }
+  
+  .companyBox{
+    margin-left: 50px;
+  }
+}
+
+/* 950 */
+
+@media (max-width: 950px){
+  nav{
+    margin-left: 200px;
+  }
+
+  .arrow{
+    display: none;
+  }
+
+  .aboutTitle{
+    font-size: 1rem;
+  }
+  
+  .textBox{
+    left: 130px;
+    width: 320px;
+  }
+
+  .text{
+    font-size: 15px;
+  }
+
+  .data{
+    left: 700px;
+  }
+
+  .bulat1Txt{
+    font-size: 13px;
+    left: 77%;
+    top: 135%;
+  }
+  
+  .bulat2Txt{
+    font-size: 13px;
+    left: 60%;
+    top: 147%;
+  }
+  
+  .bulat3Txt{
+    font-size: 13px;
+    left: 77%;
+    top: 159%;
+  }
+
+  .ownerBox{
+    margin: 0 160px;
+  }
+  
+  .owner{
+    width: 90px;
+    height: 90px;
+  }
+  
+  .owner1 , .owner2{
+    margin: 70px 90px;
+  }
+  
+  .owner2Box p {
+    font-size: 13px;
+  }
+  
+  .owner1Box p , .owner3Box p{
+    margin-top: -60px;
+    font-size: 13px;
+  }
+
+  .box{
+    width: 200px;
+    height: 200px;
+  }
+  
+  .box1{
+    margin: 18% auto;
+  }
+  
+  .box2{
+    margin: -10% 5%;
+  }
+  
+  .box3{
+    margin: -10% 75%;
+  }
+  
+  .galeryBox{
+    margin: 15% 13%;
+    width: 80%;
+    height: 70vh;
+    /* background: #000; */
+  }
+
+  .img1{
+    width: 33%;
+  }
+
+  .img2{
+    width: 18.5%;
+  }
+  
+  .img3{
+    margin-left: 70px;
+    width: 30%;
+  }
+
+  .img4{
+    width: 33%;
+  }
+  
+  .img56{
+    margin-left: 38.5%;
+    margin-top: -28%;
+  }
+  
+  .img5{
+    width: 30%;
+  }
+  
+  .img6{
+    width: 48%;
+  }
+  
+  .img78{
+    margin-right: 0;
+    margin-top: -27.5%;
+  }
+
+  .img8{
+    width: 29%;
+  }
+
+  .img7{
+    width: 22%;
+  }
+
+  .footer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 25vh;
+    background-image: url('./asset/Hinterrhein\ 1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .findusBox{
+    margin: 0 50px;
+  }
+  
+  .findusTxt , .contactTxt , .companyTxt{
+    margin: 0 20px;
+    font-size: 18px;
+  }
+  
+  .findusLine , .contactLine , .companyLine{
+    width: 250px;
+  }
+  
+  .findusWord , .companyBrand{
+    margin: 10px 20px;
+    font-size: 14px;
+    font-size: 14px;
+  }
+
+  .findusIg{
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+  .number{
+    margin: 20px 30px;
+    font-size: 14px;
+  }
+  
+  .companyBox{
+    margin-left: 50px;
+  }
+}
+
+/* 850 */
+
+@media (max-width: 850px){
+  .logoBox{
+    position: static;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* background: #000; */
+    margin: 10px 70px;
+    width: 100%;
+  }
+
+  /* bg start */
+  .homebgBox{
+    position: absolute;
+    z-index: -99;
+    top: 0;
+    width: 100%;
+  }
+
+  .homeBg{
+    width: 100%;
+  }
+  /* bg end */
+
+  nav{
+    margin-left: 150px;
+  }
+
+  .arrow{
+    display: none;
+  }
+
+  .aboutTitle{
+    font-size: 1rem;
+    margin-left: -20px;
+  }
+  
+  .textBox{
+    left: 100px;
+    width: 280px;
+  }
+
+  .text{
+    font-size: 12px;
+  }
+
+  .data{
+    left: 550px;
+  }
+
+  .bulat1Txt{
+    font-size: 13px;
+    left: 580px;
+    top: 1120px;
+  }
+  
+  .bulat2Txt{
+    font-size: 13px;
+    left: 420px;
+    top: 1220px;
+  }
+  
+  .bulat3Txt{
+    font-size: 13px;
+    left: 580px;
+    top: 1320px;
+  }
+
+  .ownerBox{
+    margin: 0 120px;
+  }
+  
+  .owner{
+    width: 80px;
+    height: 80px;
+  }
+  
+  .owner1 , .owner2{
+    margin: 70px 90px;
+  }
+  
+  .owner2Box p {
+    font-size: 13px;
+  }
+  
+  .owner1Box p , .owner3Box p{
+    margin-top: -60px;
+    font-size: 13px;
+  }
+
+  .box{
+    width: 180px;
+    height: 180px;
+  }
+  
+  .box1{
+    margin: 18% auto;
+  }
+  
+  .box2{
+    margin: -10% 5%;
+  }
+  
+  .box3{
+    margin: -10% 75%;
+  }
+
+  .alatSekolah , .alatRumah , .alatBangunan{
+    width: 90%;
+  }
+  
+  .galeryBox{
+    margin: 15% 6%;
+    width: 90%;
+    height: 70vh;
+    /* background: #000; */
+  }
+
+  .img1{
+    width: 33%;
+  }
+
+  .img2{
+    width: 18.5%;
+  }
+  
+  .img3{
+    margin-left: 70px;
+    width: 30%;
+  }
+
+  .img4{
+    width: 33%;
+  }
+  
+  .img56{
+    margin-left: 38.5%;
+    margin-top: -28%;
+  }
+  
+  .img5{
+    width: 30%;
+  }
+  
+  .img6{
+    width: 48%;
+  }
+  
+  .img78{
+    margin-right: 0;
+    margin-top: -27.5%;
+  }
+
+  .img8{
+    width: 29%;
+  }
+
+  .img7{
+    width: 22%;
+  }
+
+  .footer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 25vh;
+    background-image: url('./asset/Hinterrhein\ 1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .findusBox{
+    margin: 0 30px;
+  }
+  
+  .findusTxt , .contactTxt , .companyTxt{
+    margin: 0 20px;
+    font-size: 18px;
+  }
+  
+  .findusLine , .contactLine , .companyLine{
+    width: 200px;
+  }
+  
+  .findusWord , .companyBrand{
+    margin: 10px 20px;
+    font-size: 14px;
+    font-size: 14px;
+  }
+
+  .findusIg{
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+  .number{
+    margin: 20px 30px;
+    font-size: 14px;
+  }
+  
+  .companyBox{
+    margin-left: 50px;
+  }
+}
+
+/* 750 */
+
+@media (max-width: 750px){
+  .logoBox{
+    position: static;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* background: #000; */
+    margin: 10px 70px;
+    width: 100%;
+  }
+
+  .logo{
+    width: 50px;
+    clip-path: circle(50%);
+  }
+  
+  .logoTitle{
+    margin: 0 20px;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  /* bg start */
+  .homebgBox{
+    position: absolute;
+    z-index: -99;
+    top: 150px;
+    width: 100%;
+  }
+
+  .homeBg{
+    width: 100%;
+  }
+  /* bg end */
+
+  nav{
+    margin-left: 150px;
+  }
+
+  .arrow{
+    display: none;
+  }
+
+  .aboutTitle{
+    font-size: 1rem;
+    margin-left: -20px;
+  }
+  
+  .textBox{
+    left: 100px;
+    width: 280px;
+  }
+
+  .text{
+    font-size: 12px;
+  }
+
+  .data{
+    left: 540px;
+  }
+
+  .bulat1Txt{
+    font-size: 12px;
+    left: 570px;
+    top: 1120px;
+  }
+  
+  .bulat2Txt{
+    font-size: 12px;
+    left: 420px;
+    top: 1220px;
+  }
+  
+  .bulat3Txt{
+    font-size: 12px;
+    left: 570px;
+    top: 1320px;
+  }
+
+  .ownerBox{
+    margin: 0 120px;
+  }
+  
+  .owner{
+    width: 80px;
+    height: 80px;
+  }
+  
+  .owner1 , .owner2{
+    margin: 70px 90px;
+  }
+  
+  .owner2Box p {
+    font-size: 13px;
+  }
+  
+  .owner1Box p , .owner3Box p{
+    margin-top: -60px;
+    font-size: 13px;
+  }
+
+  .box{
+    width: 180px;
+    height: 180px;
+  }
+  
+  .box1{
+    margin: 18% auto;
+  }
+  
+  .box2{
+    margin: -10% 5%;
+  }
+  
+  .box3{
+    margin: -10% 70%;
+  }
+
+  .alatSekolah , .alatRumah , .alatBangunan{
+    width: 90%;
+  }
+  
+  .galeryBox{
+    margin: 25% 0;
+    width: 100%;
+    height: 75vh;
+    /* background: #000; */
+  }
+
+  .camera{
+    position: relative;
+    z-index: -99;
+    width: 100px;
+    top: 10%;
+    left: 2%;
+  }
+
+  .img1{
+    width: 32%;
+  }
+
+  .img2{
+    width: 18%;
+  }
+  
+  .img3{
+    margin-left: 70px;
+    width: 30%;
+  }
+
+  .img4{
+    width: 32%;
+  }
+  
+  .img56{
+    margin-left: 37%;
+    margin-top: -207px;
+  }
+  
+  .img5{
+    width: 29%;
+  }
+  
+  .img6{
+    width: 48%;
+  }
+  
+  .img78{
+    margin-right: 10px;
+    margin-top: -27.5%;
+  }
+
+  .img8{
+    width: 29%;
+  }
+
+  .img7{
+    width: 22%;
+  }
+
+  .footer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 25vh;
+    background-image: url('./asset/Hinterrhein\ 1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .findusBox{
+    margin: 0 30px;
+  }
+  
+  .findusTxt , .contactTxt , .companyTxt{
+    margin: 0 20px;
+    font-size: 17px;
+  }
+  
+  .findusLine , .contactLine , .companyLine{
+    width: 190px;
+  }
+  
+  .findusWord , .companyBrand{
+    margin: 10px 20px;
+    font-size: 11px;
+  }
+
+  .findusIg{
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 11px;
+  }
+  
+  .number{
+    margin: 20px 30px;
+    font-size: 14px;
+  }
+  
+  .companyBox{
+    margin-left: 50px;
+  }
+}
+
+/* 650 */
+
+@media (max-width: 650px){
+  .logoBox{
+    position: static;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* background: #000; */
+    margin: 10px 70px;
+    width: 100%;
+  }
+
+  /* bg start */
+  .homebgBox{
+    position: absolute;
+    z-index: -99;
+    top: 0;
+    width: 100%;
+  }
+
+  .homeBg{
+    width: 100%;
+  }
+  /* bg end */
+
+  nav{
+    margin-left: 150px;
+  }
+
+  .arrow{
+    display: none;
+  }
+
+  .aboutTitle{
+    font-size: 1rem;
+    margin-left: -20px;
+  }
+  
+  .textBox{
+    left: 100px;
+    width: 280px;
+  }
+
+  .text{
+    font-size: 12px;
+  }
+
+  .data{
+    left: 550px;
+  }
+
+  .bulat1Txt{
+    font-size: 13px;
+    left: 580px;
+    top: 1120px;
+  }
+  
+  .bulat2Txt{
+    font-size: 13px;
+    left: 420px;
+    top: 1220px;
+  }
+  
+  .bulat3Txt{
+    font-size: 13px;
+    left: 580px;
+    top: 1320px;
+  }
+
+  .ownerBox{
+    margin: 0 120px;
+  }
+  
+  .owner{
+    width: 80px;
+    height: 80px;
+  }
+  
+  .owner1 , .owner2{
+    margin: 70px 90px;
+  }
+  
+  .owner2Box p {
+    font-size: 13px;
+  }
+  
+  .owner1Box p , .owner3Box p{
+    margin-top: -60px;
+    font-size: 13px;
+  }
+
+  .box{
+    width: 180px;
+    height: 180px;
+  }
+  
+  .box1{
+    margin: 18% auto;
+  }
+  
+  .box2{
+    margin: -10% 5%;
+  }
+  
+  .box3{
+    margin: -10% 75%;
+  }
+
+  .alatSekolah , .alatRumah , .alatBangunan{
+    width: 90%;
+  }
+  
+  .galeryBox{
+    margin: 15% 6%;
+    width: 90%;
+    height: 70vh;
+    /* background: #000; */
+  }
+
+  .img1{
+    width: 33%;
+  }
+
+  .img2{
+    width: 18.5%;
+  }
+  
+  .img3{
+    margin-left: 70px;
+    width: 30%;
+  }
+
+  .img4{
+    width: 33%;
+  }
+  
+  .img56{
+    margin-left: 38.5%;
+    margin-top: -28%;
+  }
+  
+  .img5{
+    width: 30%;
+  }
+  
+  .img6{
+    width: 48%;
+  }
+  
+  .img78{
+    margin-right: 0;
+    margin-top: -27.5%;
+  }
+
+  .img8{
+    width: 29%;
+  }
+
+  .img7{
+    width: 22%;
+  }
+
+  .footer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 25vh;
+    background-image: url('./asset/Hinterrhein\ 1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .findusBox{
+    margin: 0 30px;
+  }
+  
+  .findusTxt , .contactTxt , .companyTxt{
+    margin: 0 20px;
+    font-size: 18px;
+  }
+  
+  .findusLine , .contactLine , .companyLine{
+    width: 200px;
+  }
+  
+  .findusWord , .companyBrand{
+    margin: 10px 20px;
+    font-size: 14px;
+    font-size: 14px;
+  }
+
+  .findusIg{
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+  .number{
+    margin: 20px 30px;
+    font-size: 14px;
+  }
+  
+  .companyBox{
+    margin-left: 50px;
+  }
+}
+
+/* 750 */
+
+@media (max-width: 750px){
+  .logoBox{
+    position: static;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* background: #000; */
+    margin: 10px 30px;
+    width: 100%;
+  }
+
+  .logo{
+    width: 40px;
+    clip-path: circle(50%);
+  }
+  
+  .logoTitle{
+    margin: 0 20px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  /* bg start */
+  .homebgBox{
+    position: absolute;
+    z-index: -99;
+    top: 150px;
+    width: 100%;
+  }
+
+  .homeBg{
+    width: 100%;
+  }
+  /* bg end */
+
+  nav{
+    margin-left: 120px;
+  }
+
+  li{
+    font-size: 14px;
+  }
+
+  .arrow{
+    display: none;
+  }
+
+  .aboutTitle{
+    font-size: 1rem;
+    margin-left: -20px;
+    margin-top: -80px;
+  }
+  
+  .textBox{
+    left: 100px;
+    width: 280px;
+    position: absolute;
+    top: 960px;
+    left: 60px;
+  }
+
+  .text{
+    font-size: 12px;
+  }
+
+  .data{
+    left: 440px;
+    top: 260px;
+  }
+
+  .bulat1Txt{
+    font-size: 12px;
+    left: 470px;
+    top: 1090px;
+  }
+  
+  .bulat2Txt{
+    font-size: 12px;
+    left: 320px;
+    top: 1200px;
+  }
+  
+  .bulat3Txt{
+    font-size: 12px;
+    left: 470px;
+    top: 1300px;
+  }
+
+  .ownerBox{
+    margin: 300px auto;
+  }
+  
+  .owner{
+    width: 80px;
+    height: 80px;
+  }
+  
+  .owner1 , .owner2{
+    margin: 70px 90px;
+  }
+  
+  .owner2Box p {
+    font-size: 13px;
+  }
+  
+  .owner1Box p , .owner3Box p{
+    margin-top: -60px;
+    font-size: 13px;
+  }
+
+  .box{
+    width: 180px;
+    height: 180px;
+  }
+  
+  .box1{
+    margin: 18% auto;
+  }
+  
+  .box2{
+    margin: -10% 5%;
+  }
+  
+  .box3{
+    margin: -10% 70%;
+  }
+
+  .alatSekolah , .alatRumah , .alatBangunan{
+    width: 90%;
+  }
+  
+  .galeryBox{
+    margin: 25% 0;
+    width: 100%;
+    height: 75vh;
+    /* background: #000; */
+  }
+
+  .camera{
+    position: relative;
+    z-index: -99;
+    width: 100px;
+    top: 10%;
+    left: 2%;
+  }
+
+  .img1{
+    width: 31%;
+  }
+
+  .img2{
+    width: 17.5%;
+  }
+  
+  .img3{
+    margin-left: 70px;
+    width: 29%;
+  }
+
+  .img4{
+    width: 31%;
+  }
+  
+  .img56{
+    margin-left: 37%;
+    margin-top: -180px;
+  }
+  
+  .img5{
+    width: 28%;
+  }
+  
+  .img6{
+    width: 45%;
+  }
+  
+  .img78{
+    margin-right: 8px;
+    margin-top: -27.5%;
+  }
+
+  .img8{
+    width: 29%;
+  }
+
+  .img7{
+    width: 22%;
+  }
+
+  .footer{
+    display: none;
+  }
+}
+
+/* 550 */
+
+@media (max-width: 550px){
+  .logoBox{
+    position: static;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 30px;
+    width: 100%;
+  }
+
+  .logo{
+    width: 40px;
+    clip-path: circle(50%);
+  }
+  
+  .logoTitle{
+    margin: 0 20px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  /* bg start */
+  .homebgBox{
+    position: absolute;
+    z-index: -99;
+    top: 150px;
+    width: 101%;
+  }
+
+  .homeBg{
+    width: 100%;
+  }
+  /* bg end */
+
+  nav{
+    display: none;
+  }
+
+  .navBox{
+    width: 100%;
+  }
+
+  .arrow{
+    display: block;
+    width: 30px;
+    background: #ddd;
+    border-radius: 50%;
+    position: absolute;
+    right: 50px;
+  }
+
+  .aboutTitle{
+    font-size: 1rem;
+    margin-left: -20px;
+    margin-top: -80px;
+  }
+  
+  .textBox{
+    left: 100px;
+    width: 280px;
+    position: absolute;
+    top: 960px;
+    left: 60px;
+  }
+
+  .text{
+    font-size: 12px;
+  }
+
+  .data{
+    left: 340px;
+    top: 260px;
+  }
+
+  .bulat1Txt{
+    font-size: 12px;
+    left: 370px;
+    top: 1090px;
+  }
+  
+  .bulat2Txt{
+    font-size: 12px;
+    left: 220px;
+    top: 1200px;
+  }
+  
+  .bulat3Txt{
+    font-size: 12px;
+    left: 370px;
+    top: 1300px;
+  }
+
+  .ownerBox{
+    margin: 300px auto;
+  }
+  
+  .owner{
+    width: 80px;
+    height: 80px;
+  }
+  
+  .owner1 , .owner2{
+    margin: 70px 90px;
+  }
+  
+  .owner2Box p {
+    font-size: 13px;
+  }
+  
+  .owner1Box p , .owner3Box p{
+    margin-top: -60px;
+    font-size: 13px;
+  }
+
+  .box{
+    width: 180px;
+    height: 180px;
+  }
+  
+  .box1{
+    margin: 18% auto;
+  }
+  
+  .box2{
+    margin: -10% 5%;
+  }
+  
+  .box3{
+    margin: -10% 60%;
+  }
+
+  .alatSekolah , .alatRumah , .alatBangunan{
+    width: 90%;
+  }
+  
+  .galeryBox{
+    margin: 25% 0;
+    width: 100%;
+    height: 75vh;
+    background: #000;
+  }
+
+  .camera{
+    position: relative;
+    z-index: -99;
+    width: 100px;
+    top: 10%;
+    left: 2%;
+  }
+
+  .img1{
+    width: 31%;
+  }
+
+  .img2{
+    width: 17.5%;
+  }
+  
+  .img3{
+    margin-left: 70px;
+    width: 29%;
+  }
+
+  .img4{
+    width: 31%;
+  }
+  
+  .img56{
+    margin-left: 37%;
+    margin-top: -180px;
+  }
+  
+  .img5{
+    width: 28%;
+  }
+  
+  .img6{
+    width: 45%;
+  }
+  
+  .img78{
+    margin-right: 8px;
+    margin-top: -27.5%;
+  }
+
+  .img8{
+    width: 29%;
+  }
+
+  .img7{
+    width: 22%;
+  }
+
+  .footer{
+    display: none;
   }
 }
